@@ -1,4 +1,60 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { useRef, useState } from "react";
+import before1 from "@/assets/before-1.jpg";
+import after1 from "@/assets/after-1.jpg";
+import before2 from "@/assets/before-2.jpg";
+import after2 from "@/assets/after-2.jpg";
+import before3 from "@/assets/before-3.jpg";
+import after3 from "@/assets/after-3.jpg";
+
+const gallery = [
+  { before: before1, after: after1, label: "Home window" },
+  { before: before2, after: after2, label: "Shopfront" },
+  { before: before3, after: after3, label: "Apartment window" },
+];
+
+function BeforeAfterSlider({ before, after, label }: { before: string; after: string; label: string }) {
+  const [pos, setPos] = useState(50);
+  const ref = useRef<HTMLDivElement>(null);
+  const dragging = useRef(false);
+
+  const update = (clientX: number) => {
+    const el = ref.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const p = ((clientX - rect.left) / rect.width) * 100;
+    setPos(Math.min(100, Math.max(0, p)));
+  };
+
+  return (
+    <div>
+      <div
+        ref={ref}
+        className="relative aspect-[4/3] w-full overflow-hidden rounded-xl border border-border select-none"
+        onMouseDown={(e) => {
+          dragging.current = true;
+          update(e.clientX);
+        }}
+        onMouseMove={(e) => dragging.current && update(e.clientX)}
+        onMouseUp={() => (dragging.current = false)}
+        onMouseLeave={() => (dragging.current = false)}
+        onTouchStart={(e) => update(e.touches[0].clientX)}
+        onTouchMove={(e) => update(e.touches[0].clientX)}
+      >
+        <img src={after} alt={`${label} after cleaning`} className="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+        <div className="absolute inset-0 overflow-hidden" style={{ width: `${pos}%` }}>
+          <img src={before} alt={`${label} before cleaning`} className="absolute inset-0 h-full w-full object-cover" loading="lazy" style={{ width: `${100 / (pos / 100)}%`, maxWidth: "none" }} />
+        </div>
+        <span className="absolute left-3 top-3 rounded-full bg-black/70 px-2.5 py-1 text-xs font-medium text-white">Before</span>
+        <span className="absolute right-3 top-3 rounded-full bg-primary px-2.5 py-1 text-xs font-medium text-primary-foreground">After</span>
+        <div className="absolute top-0 bottom-0 w-0.5 bg-white" style={{ left: `${pos}%` }}>
+          <div className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 grid h-8 w-8 place-items-center rounded-full bg-white text-xs font-bold text-foreground shadow">↔</div>
+        </div>
+      </div>
+      <p className="mt-2 text-center text-sm text-muted-foreground">{label}</p>
+    </div>
+  );
+}
 
 export const Route = createFileRoute("/")({
   head: () => ({
