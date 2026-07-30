@@ -53,15 +53,15 @@ const reviews = [
 const services = [
   {
     title: "Home Window Cleaning",
-    desc: "Inside and out, frames and sills included. We leave your home windows sparkling.",
+    desc: "Outside-only window cleaning for homes. Frames and sills included. We leave your windows sparkling.",
   },
   {
     title: "Commercial & Shopfronts",
-    desc: "Keep your business looking its best with regular or one-off cleaning for shopfronts and offices.",
+    desc: "Keep your business looking its best with regular or one-off outside cleaning for shopfronts and offices.",
   },
   {
-    title: "Gutter & Frame Cleaning",
-    desc: "We don't stop at the glass — frames, sills, and gutters cleaned too for a complete finish.",
+    title: "Frame & Sill Cleaning",
+    desc: "We don't stop at the glass — frames and sills cleaned too for a complete outside finish.",
   },
 ];
 
@@ -238,21 +238,14 @@ function Index() {
             </div>
             <div className="space-y-3">
               <a
-                href="tel:+38500000000"
-                className="flex items-center gap-3 rounded-xl bg-primary-foreground/10 px-5 py-4 text-sm font-medium transition-colors hover:bg-primary-foreground/20"
-              >
-                <span className="text-lg">📞</span>
-                <span>Call us: +385 00 000 0000</span>
-              </a>
-              <a
-                href="mailto:hello@tinicleaning.com"
+                href="mailto:tin.you@gmail.com"
                 className="flex items-center gap-3 rounded-xl bg-primary-foreground/10 px-5 py-4 text-sm font-medium transition-colors hover:bg-primary-foreground/20"
               >
                 <span className="text-lg">✉️</span>
-                <span>Email: hello@tinicleaning.com</span>
+                <span>Email: tin.you@gmail.com</span>
               </a>
               <a
-                href="https://wa.me/38500000000"
+                href="https://wa.me/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 rounded-xl bg-primary-foreground/10 px-5 py-4 text-sm font-medium transition-colors hover:bg-primary-foreground/20"
