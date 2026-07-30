@@ -66,9 +66,9 @@ const services = [
 ];
 
 const steps = [
-  { n: "01", title: "Get in Touch", desc: "Call or message us with your address and what you need cleaned." },
+  { n: "01", title: "Get in Touch", desc: "Email or message us with your address and what you need cleaned." },
   { n: "02", title: "Free Quote", desc: "We give you a clear, upfront price — no surprises, no hidden fees." },
-  { n: "03", title: "We Clean", desc: "Tin arrives on time and gets your windows spotless, inside and out." },
+  { n: "03", title: "We Clean", desc: "Tin arrives on time and gets the outside of your windows spotless." },
 ];
 
 function Index() {
@@ -110,8 +110,8 @@ function Index() {
             </h1>
             <p className="mt-4 max-w-md text-base text-muted-foreground">
               Tin i Cleaning is your local window cleaning specialist for homes
-              and businesses. Clear prices, careful work, and windows that
-              actually shine.
+              and businesses. We clean the outside of your windows — clear
+              prices, careful work, and windows that actually shine.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a
