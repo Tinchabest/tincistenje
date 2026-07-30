@@ -141,6 +141,7 @@ function Index() {
           </a>
           <nav className="hidden items-center gap-7 text-sm text-muted-foreground sm:flex">
             <a href="#services" className="transition-colors hover:text-foreground">Services</a>
+            <a href="#gallery" className="transition-colors hover:text-foreground">Gallery</a>
             <a href="#reviews" className="transition-colors hover:text-foreground">Reviews</a>
             <a href="#contact" className="transition-colors hover:text-foreground">Contact</a>
           </nav>
