@@ -232,6 +232,19 @@ function Index() {
         </div>
       </section>
 
+      {/* Before / After Gallery */}
+      <section id="gallery" className="mx-auto max-w-5xl px-5 py-16">
+        <h2 className="text-2xl font-bold tracking-tight sm:text-3xl">Before & after</h2>
+        <p className="mt-2 text-muted-foreground">
+          Drag the slider to see the difference outside cleaning makes.
+        </p>
+        <div className="mt-8 grid gap-6 sm:grid-cols-2">
+          {gallery.map((g) => (
+            <BeforeAfterSlider key={g.label} before={g.before} after={g.after} label={g.label} />
+          ))}
+        </div>
+      </section>
+
       {/* How it works */}
       <section className="border-y border-border bg-secondary/50">
         <div className="mx-auto max-w-5xl px-5 py-16">
