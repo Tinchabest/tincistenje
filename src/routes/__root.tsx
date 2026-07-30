@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Tin i Cleaning — Professional Window Cleaning" },
+      { name: "description", content: "Tin i Cleaning offers professional, affordable window cleaning for homes and businesses. Spotless results, friendly service, 5-star rated." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Tin i Cleaning — Professional Window Cleaning" },
+      { property: "og:description", content: "Tin i Cleaning offers professional, affordable window cleaning for homes and businesses. Spotless results, friendly service, 5-star rated." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Tin i Cleaning — Professional Window Cleaning" },
+      { name: "twitter:description", content: "Tin i Cleaning offers professional, affordable window cleaning for homes and businesses. Spotless results, friendly service, 5-star rated." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9b55a6c4-045f-4b6b-848f-40c975cd6d96/id-preview-f8eddf64--d0277d87-4cdd-4ed4-a2ab-523890f67d87.lovable.app-1785402644271.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/9b55a6c4-045f-4b6b-848f-40c975cd6d96/id-preview-f8eddf64--d0277d87-4cdd-4ed4-a2ab-523890f67d87.lovable.app-1785402644271.png" },
     ],
     links: [
       {

@@ -13,7 +13,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Professional, affordable window cleaning for homes and businesses. Spotless results, friendly service, 5-star rated.",
+          "Tin i Cleaning offers professional, affordable window cleaning for homes and businesses. Spotless results, friendly service, 5-star rated.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
