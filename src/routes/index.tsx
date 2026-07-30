@@ -53,22 +53,22 @@ const reviews = [
 const services = [
   {
     title: "Home Window Cleaning",
-    desc: "Inside and out, frames and sills included. We leave your home windows sparkling.",
+    desc: "Outside-only window cleaning for homes. Frames and sills included. We leave your windows sparkling.",
   },
   {
     title: "Commercial & Shopfronts",
-    desc: "Keep your business looking its best with regular or one-off cleaning for shopfronts and offices.",
+    desc: "Keep your business looking its best with regular or one-off outside cleaning for shopfronts and offices.",
   },
   {
-    title: "Gutter & Frame Cleaning",
-    desc: "We don't stop at the glass — frames, sills, and gutters cleaned too for a complete finish.",
+    title: "Frame & Sill Cleaning",
+    desc: "We don't stop at the glass — frames and sills cleaned too for a complete outside finish.",
   },
 ];
 
 const steps = [
-  { n: "01", title: "Get in Touch", desc: "Call or message us with your address and what you need cleaned." },
+  { n: "01", title: "Get in Touch", desc: "Email or message us with your address and what you need cleaned." },
   { n: "02", title: "Free Quote", desc: "We give you a clear, upfront price — no surprises, no hidden fees." },
-  { n: "03", title: "We Clean", desc: "Tin arrives on time and gets your windows spotless, inside and out." },
+  { n: "03", title: "We Clean", desc: "Tin arrives on time and gets the outside of your windows spotless." },
 ];
 
 function Index() {
@@ -110,8 +110,8 @@ function Index() {
             </h1>
             <p className="mt-4 max-w-md text-base text-muted-foreground">
               Tin i Cleaning is your local window cleaning specialist for homes
-              and businesses. Clear prices, careful work, and windows that
-              actually shine.
+              and businesses. We clean the outside of your windows — clear
+              prices, careful work, and windows that actually shine.
             </p>
             <div className="mt-7 flex flex-wrap gap-3">
               <a
@@ -238,21 +238,14 @@ function Index() {
             </div>
             <div className="space-y-3">
               <a
-                href="tel:+38500000000"
-                className="flex items-center gap-3 rounded-xl bg-primary-foreground/10 px-5 py-4 text-sm font-medium transition-colors hover:bg-primary-foreground/20"
-              >
-                <span className="text-lg">📞</span>
-                <span>Call us: +385 00 000 0000</span>
-              </a>
-              <a
-                href="mailto:hello@tinicleaning.com"
+                href="mailto:tin.you@gmail.com"
                 className="flex items-center gap-3 rounded-xl bg-primary-foreground/10 px-5 py-4 text-sm font-medium transition-colors hover:bg-primary-foreground/20"
               >
                 <span className="text-lg">✉️</span>
-                <span>Email: hello@tinicleaning.com</span>
+                <span>Email: tin.you@gmail.com</span>
               </a>
               <a
-                href="https://wa.me/38500000000"
+                href="https://wa.me/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-3 rounded-xl bg-primary-foreground/10 px-5 py-4 text-sm font-medium transition-colors hover:bg-primary-foreground/20"
